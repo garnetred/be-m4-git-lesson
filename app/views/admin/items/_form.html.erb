@@ -10,7 +10,7 @@
     <%= f.select            :status, Item.statuses.keys.map { |s| [s.humanize, s] } %>
     <%= f.label             :category %>
     <%= f.collection_select :category_id, Category.all, :id, :title %>
-    <%= f.label             "Image" %>
+    <%= f.label             "Photo" %>
     <%= f.file_field        :image %>
     <%= f.submit %>
   <% end %>
